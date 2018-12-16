@@ -52,8 +52,8 @@ def mutate(vector,x,y,l):
         vector[n1]=255-vector[n1]
     return vector
 if __name__=="__main__":
-    x=cv2.imread("..//Data//test.jpg",0)
-    #x=cv2.imread("..//Results//output_GA.jpg",0)
+    x=cv2.imread("test.jpg",0)
+    #x=cv2.imread("output_GA.jpg",0)
     x=cv2.resize(x,(256,256))
     frags_per_row=1
     width,height=len(x[0]),len(x)
@@ -74,10 +74,9 @@ if __name__=="__main__":
         crypt[i]=dummy
     t2=time()
     print(t2-t1)
-    cv2.imwrite("..//Results//output_GA.jpg",x)
-    #cv2.imwrite("..//Results//output_GA_Decrypted.jpg",x)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    cv2.imwrite("output_GA.jpg",x)
+    #cv2.imwrite("output_GA_Decrypted.jpg",x)
+
         
         
         
