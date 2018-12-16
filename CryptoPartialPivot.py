@@ -39,7 +39,7 @@ def decrypt(M,swap,modify):
     return M          
 
 if __name__=="__main__":
-    mtx = cv2.imread(r"..//Data//test.jpg",0)
+    mtx = cv2.imread(r"test.jpg",0)
     mtx=mtx.tolist()
     t1=time()
     mtx,swap,modify=encrypt(mtx)
@@ -48,6 +48,6 @@ if __name__=="__main__":
     t3=time()
     mtx=np.array(mtx)
     print(t2-t1,"  ",t3-t2)
-    #cv2.imwrite(r'..//Results//output_PartialPivot_decrypted.jpg',mtx)
-    cv2.imwrite(r'..//Results//output_PartialPivot.jpg',mtx)
+    #cv2.imwrite(r'output_PartialPivot_decrypted.jpg',mtx)
+    cv2.imwrite(r'output_PartialPivot.jpg',mtx)
 
