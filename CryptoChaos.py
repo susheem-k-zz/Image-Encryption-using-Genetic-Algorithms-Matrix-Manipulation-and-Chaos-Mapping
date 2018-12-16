@@ -37,13 +37,13 @@ def chirikovdec(x): #the decryption function
     return x
 
 if __name__=="__main__":
-    x=cv2.imread("..//Data//test.jpg",0)
+    x=cv2.imread("test.jpg",0)
     t1=time()
     x=chirikov(x)
     t2=time()
     #x=chirikovdec(x)
     t3=time()
     print(t2-t1,t3-t2)
-    cv2.imwrite("..//Results//output_Chaos.jpg",x)
-    #cv2.imwrite("..//Results//output_Chaos_decrypted.jpg",x)
+    cv2.imwrite("output_Chaos.jpg",x)
+    #cv2.imwrite("output_Chaos_decrypted.jpg",x)
 
