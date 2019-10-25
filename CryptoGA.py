@@ -29,7 +29,7 @@ def createvectors(x,l):
     return vecs       
 
 def crossover(vector,x,y,l):
-    if x<l and y<l:
+    if x<=l-1 and y<=l-1:
         coi=x
     else:
         coi=0
