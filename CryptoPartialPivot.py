@@ -20,7 +20,7 @@ def encrypt(A): #A is the image matrix
        q = float(M[j][k]) / M[k][k]
        modify[k].append(q)
        for m in range(k, n):
-           M[j][m] -=  q * M[k][m]
+           M[j][m] = M[j][m] -  q * M[k][m]
   
   return [M,swap,modify]
 
