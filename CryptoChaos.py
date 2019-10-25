@@ -46,4 +46,5 @@ if __name__=="__main__":
     print(t2-t1,t3-t2)
     cv2.imwrite("output_Chaos.jpg",x)
     #cv2.imwrite("output_Chaos_decrypted.jpg",x)
+    #cv2.imwrite("Output",x)
 
